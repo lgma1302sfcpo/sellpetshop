@@ -1,9 +1,14 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Luiz Guilherme | Sistema de gestão para pet shops',
   description: 'Sistema personalizado para vendas, estoque, clientes, banho e tosa, caixa e gestão de pet shops.',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
